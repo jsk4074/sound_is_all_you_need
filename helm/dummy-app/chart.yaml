@@ -1,4 +1,4 @@
 apiVersion: v2
-name: dummy-app
+name: klipper
 description: A dummy deployment for ArgoCD testing
 version: 0.1.0
