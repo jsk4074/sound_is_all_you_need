@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sound_is_all_you_need_ASD
+  name: sound_is_all_you_need_asd
   namespace: argocd
 spec:
   project: default
