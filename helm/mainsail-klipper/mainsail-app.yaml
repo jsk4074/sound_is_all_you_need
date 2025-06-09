@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mainsail-klipper
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yourname/klipper-ci-cd
+    targetRevision: main
+    path: helm/mainsail-klipper
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: mainsail
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - CreateNamespace=true
