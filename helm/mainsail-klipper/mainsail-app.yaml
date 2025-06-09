@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: mainsail
   syncPolicy:
-    automated:
+    automated: 
       selfHeal: true
       prune: true
     syncOptions:
