@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mainsail-klipper
+  name: sound_is_all_you_need_ASD
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/yourname/klipper-ci-cd
+    repoURL: https://github.com/jsk4074/sound_is_all_you_need
     targetRevision: main
     path: helm/mainsail-klipper
   destination:
