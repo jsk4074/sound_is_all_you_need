@@ -1,0 +1,4 @@
+apiVersion: v2
+name: dummy-app
+description: A dummy deployment for ArgoCD testing
+version: 0.1.0
